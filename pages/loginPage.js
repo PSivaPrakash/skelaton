@@ -10,9 +10,9 @@ export class SignIn
         this.loginButton = page.getByRole('button', {name: ' Login '})
     }
 
-    async browserLauncher(data)
+    async browserLauncher()
     {
-        await this.page.goto(data.url)
+        await this.page.goto('/')
     }
 
     async userLogin(data)
